@@ -1,8 +1,8 @@
 # AngStripe
 
-Step 1:- Setup a new project with ng new <project name> <br />
+Step 1:- Setup a new project with ng new project-name <br />
   
-Step 2:- Once the creation process is over go inside the folder i.e., cd <project name> <br />
+Step 2:- Once the creation process is over go inside the folder i.e., cd project-name <br />
   
 Step 3:- Type ng serve and enter <br />
 
@@ -15,7 +15,8 @@ Step 5:- Stripe offer two way to interact with Stripe server using JS.
            
          Default Stripe Form which is the objective of this exercise gives us the easiest and safest way to create a token.
          
-Step 6:- Insert <script src="https://checkout.stripe.com/checkout.js"></script> in index.html. We can include via component as well. In this method the stripe will load when we really need it.
+Step 6:- Insert <script src="https://checkout.stripe.com/checkout.js"></script> in index.html. We can include via component as well. In this method the stripe will load when we really need it.<br />
+
 Step 7:- In app.component.ts, include 
 
 loadStripe() {
@@ -35,7 +36,7 @@ ngOnInit() {
     this.loadStripe();
 }
 
-In this way loadStripe method will add the script dynamically when the component loads.
+In this way loadStripe method will add the script dynamically when the component loads.<br />
 
 Step 9:- Add pay method which will open the stripe payment form
 
@@ -146,8 +147,8 @@ export class AppComponent implements OnInit {
   }
 }
 
-Step 12:- If ng serve is still running when doing these updates, keep verifying if there is any break any errors in the prompt. Else Compiled Successfully, will be seen.
+Step 12:- If ng serve is still running when doing these updates, keep verifying if there is any break any errors in the prompt. Else Compiled Successfully, will be seen.<br />
 
-Step 13:- The updated UI in the browser will have, three options for $20, $30 and $50 as declared in app.component.html.
-Step 14:- Click one of the options and the dialog opens with the request for credit card no, card expiry date and security code of the card. Sample credit card no is 4242 4242 4242 4242. The card expiry date and the security code is the user's choice. 
-Step 15:- Once the inputs are keyed in and submitted, the user get's an alert saying Token created.
+Step 13:- The updated UI in the browser will have, three options for $20, $30 and $50 as declared in app.component.html.<br />
+
+Step 14:- Once the inputs are keyed in as suggested in the index and submitted, the user get's an alert saying Token created.
