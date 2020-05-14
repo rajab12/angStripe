@@ -1,14 +1,20 @@
 # AngStripe
 
-Step 1:- Setup a new project with ng new <project name>
-Step 2:- Once the creation process is over go inside the folder i.e., cd <project name>
-Step 3:- Type ng serve and enter
-Step 4:- Once the status is "Compiled Successfully" in the prompt, hit http://localhost:4200
+Step 1:- Setup a new project with ng new <project name> <br />
+  
+Step 2:- Once the creation process is over go inside the folder i.e., cd <project name> <br />
+  
+Step 3:- Type ng serve and enter <br />
+
+Step 4:- Once the status is "Compiled Successfully" in the prompt, hit http://localhost:4200 <br />
+
 Step 5:- Stripe offer two way to interact with Stripe server using JS.
 
            a. Default Stripe form.
            b. Custom Stripe Form.
+           
          Default Stripe Form which is the objective of this exercise gives us the easiest and safest way to create a token.
+         
 Step 6:- Insert <script src="https://checkout.stripe.com/checkout.js"></script> in index.html. We can include via component as well. In this method the stripe will load when we really need it.
 Step 7:- In app.component.ts, include 
 
